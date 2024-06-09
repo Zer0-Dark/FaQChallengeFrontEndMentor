@@ -1,4 +1,4 @@
-import { FaqAccordion } from "./components/FAQaccordion"
+import { FaqAccordion } from "./components/FAQaccordion.jsx"
 
 function App() {
   return (
