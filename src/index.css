@@ -1,4 +1,123 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
+/*! adding the style for all components to get centred */
+.main-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*! End of adding the main container  */
+
+/* !Faq task styling */
+.faq {
+  width: 800px;
+  height: 500px;
+  background-color: hsl(275, 100%, 97%);
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .faq {
+    width: 400px;
+    height: 700px;
+  }
+}
+.faq .faq-top-area {
+  height: 40%;
+  width: 100%;
+  background-color: black;
+  background-image: url("./components//FaqAccordion/background-pattern-desktop.svg");
+}
+.faq .faq-bottom-area {
+  height: 60%;
+  width: 100%;
+  background-color: hsl(275, 100%, 97%);
+}
+.faq .faq-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 350px;
+  max-height: fit-content;
+  width: 450px;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.331);
+}
+@media (max-width: 900px) {
+  .faq .faq-container {
+    width: 350px;
+    min-height: 500px;
+  }
+}
+.faq .faq-container .faq-title {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  align-items: center;
+}
+.faq .faq-container .faq-title h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  color: hsl(292, 42%, 14%);
+}
+.faq .faq-container .faq-title img {
+  /* transform: translateY(-25%); */
+  height: 40px;
+  margin-right: 10px;
+}
+.faq .faq-container .faq-questions {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.faq .faq-container .faq-questions > :not(:last-child) {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.357);
+}
+.faq .faq-container .faq-question {
+  padding: 10px;
+}
+.faq .faq-container .faq-question .question-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq .faq-container .faq-question .question-title h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(292, 42%, 14%);
+  text-transform: capitalize;
+}
+.faq .faq-container .faq-question .question-title h3:hover {
+  color: #800080;
+}
+.faq .faq-container .faq-question .question-title img {
+  width: 25px;
+}
+.faq .faq-container .faq-question .off {
+  display: none;
+}
+.faq .faq-container .faq-question .on {
+  padding: 10px 0px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(292, 16%, 49%);
+  width: 95%;
+}
+/* !End Faq task styling */

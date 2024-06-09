@@ -2,7 +2,7 @@ import { FaqAccordion } from "./components/FAQaccordion"
 
 function App() {
   return (
-    <div>
+    <div className="main-container">
       <FaqAccordion></FaqAccordion>
     </div>
   )
