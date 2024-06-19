@@ -7,7 +7,7 @@ import mins from "./FaqAccordion/icon-minus.svg"
 import { useState } from "react";
 
 export function FaqAccordion() {
-    let [items, setItems] = useState(data)
+    let [items, setItems] = useState(data);
     function toggle(id) {
         setItems(oldItems => oldItems.map(item => {
             return item.id == id ?
